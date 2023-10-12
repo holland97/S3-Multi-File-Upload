@@ -27,7 +27,7 @@ resource "aws_s3_bucket_public_access_block" "bkt-public-access" {
 
 }
 
-# Grabs policy to 
+# Grabs policy 
 data "aws_iam_policy_document" "obj-policy" {
   statement {
     actions = [
@@ -54,6 +54,7 @@ resource "aws_s3_bucket_ownership_controls" "bkt-ownership" {
 
 }
 
+# Attaches policy to the bucket I created
 resource "aws_s3_bucket_policy" "capcom-bkt-policy" {
   bucket = aws_s3_bucket.capcom-bkt.id
   policy = data.aws_iam_policy_document.obj-policy.json
