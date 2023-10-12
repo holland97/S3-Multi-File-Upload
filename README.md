@@ -1,2 +1,14 @@
-# S3-Bucket-Migrate-Data
-Provision two s3 buckets using terraform in two different regions with files in one of them. Migrate data from the source bucket to the destination using AWS CLI
+
+
+
+
+
+
+
+
+# Resources
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_object
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_ownership_controls
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_policy
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_public_access_block
